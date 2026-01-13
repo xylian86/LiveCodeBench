@@ -693,6 +693,13 @@ LanguageModelList: list[LanguageModel] = [
         link="https://huggingface.co/Qwen/Qwen3-235B-A22B",
     ),
     LanguageModel(
+        "Qwen/Qwen3-4B-Thinking-2507",
+        "Qwen3-4B-Thinking-2507",
+        LMStyle.DeepSeekR1,
+        datetime(2025, 1, 25),
+        link="https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507",
+    ),
+    LanguageModel(
         "azerogpt",
         "AzeroGPT-64b",
         LMStyle.CodeQwenInstruct,

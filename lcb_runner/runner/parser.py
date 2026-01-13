@@ -118,6 +118,12 @@ def get_args():
         help="Folder name to save the custom output results (output file folder modified if None)",
     )
     parser.add_argument("--dtype", type=str, default="bfloat16", help="Dtype for vllm")
+    parser.add_argument(
+        "--vllm_server_url",
+        type=str,
+        default=None,
+        help="URL of vLLM server (e.g., http://localhost:8000/v1). If provided, uses server mode instead of direct vLLM.",
+    )
     # Added to avoid running extra generations (it's slow for reasoning models)
     parser.add_argument(
         "--start_date",

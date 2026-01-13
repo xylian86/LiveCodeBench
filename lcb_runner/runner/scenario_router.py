@@ -192,6 +192,7 @@ def get_metrics(
         metrics = codegen_metrics(
             eval_samples,
             generations,
+            k_list=[1],  # Only compute pass@1
             num_process_evaluate=args.num_process_evaluate,
             timeout=args.timeout,
         )
